@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Event Registration Form</h2>
+        <form id="form">
+            <label>Name:</label>
+            <input type="text" id="name" required placeholder="Enter Your Name">
+            <span class="error" id="nameError"></span>
+            <br><br>
+            <label>Email:</label>
+            <input type="email" id="email" required placeholder="Enter Your Email">
+            <span class="error" id="emailError"></span>
+            <br><br>
+            <label>Phone Number:</label>
+            <input type="text" id="phone" required placeholder="Enter Your Phone Number">
+            <span class="error" id="phoneError"></span>
+            <br><br>
+            <label>Age:</label>
+            <input type="number" id="age" required placeholder="Enter Your Age">
+            <span class="error" id="ageError"></span>
+            <br><br>
+            <label>
+                <input type="checkbox" id="terms" required> I have read and agree to the terms and conditions
+            </label>
+            <button type="submit">Submit</button>
+        </form> 
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
